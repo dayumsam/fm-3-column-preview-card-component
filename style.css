@@ -1,0 +1,85 @@
+:root {
+  --clr-orange: 31, 77%, 52%;
+  --clr-cyan: 184, 100%, 22%;
+  --clr-darkcyan: 179, 100%, 13%;
+  --clr-twhite: 0, 0%, 100%, 0.75;
+  --clr-lightgray: 0, 0%, 95%;
+}
+
+*,
+*::before,
+*,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 1em;
+
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+
+  background-color: hsl(var(--clr-gray));
+
+  color: hsl(var(--clr-twhite));
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+main {
+  display: flex;
+  border-radius: 0.8em;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1020px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+.card {
+  padding: 4em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  max-width: 25em;
+  min-height: 35em;
+  background-color: hsl(var(--card-clr));
+}
+
+.card h1 {
+  font-size: 3em;
+  font-family: "Big Shoulders Display", cursive;
+  margin-block: 0.5em;
+
+  text-transform: uppercase;
+}
+
+.card p {
+  max-width: 80%;
+  line-height: 2;
+
+  margin-bottom: 2em;
+}
+
+.card a {
+  margin-top: auto;
+  background-color: hsl(var(--clr-lightgray));
+  padding: 1em 2.5em;
+  border: 2px solid hsl(var(--clr-lightgray));
+  border-radius: 2em;
+  text-decoration: none;
+  color: hsl(var(--card-clr));
+  transition: background-color 0.2s;
+}
+
+.card a:hover {
+  background-color: transparent;
+  color: hsl(var(--clr-lightgray));
+}
