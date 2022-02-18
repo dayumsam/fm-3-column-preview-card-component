@@ -22,7 +22,7 @@ body {
   display: grid;
   place-items: center;
 
-  background-color: hsl(var(--clr-gray));
+  background-color: hsl(var(--clr-lightgray));
 
   color: hsl(var(--clr-twhite));
   font-size: 15px;
